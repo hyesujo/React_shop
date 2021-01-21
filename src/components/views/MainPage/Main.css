@@ -1,0 +1,665 @@
+@charset "utf-8";
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html {
+    font-size: 0;
+    overflow-x: hidden;
+}
+
+.topNav {
+    background-color: #fff9d2;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.topNav a{
+    text-decoration: none;
+    color: #282c4c;
+}
+.topNav a:hover {
+    color: #f45700;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #efe9c2;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav > a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    text-align: start;
+}
+
+.sidenav > a:hover {
+    color: #f45700;
+}
+
+.sidenav > .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main {
+    overflow: hidden;
+    min-width: 1150px;
+    width: 100%;
+}
+
+.item-wrap {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    min-width: 1150px;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 0px 0px 10px;    
+}
+
+
+.nav-center {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nav-center li {
+    padding: 5px 10px 3px 10px;
+}
+
+.sns {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.sns li {
+    padding: 5px 5px 3px 10px;
+}
+
+.container {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 22px;
+    background-color: #f45700;
+    height: 3px;
+    margin: 4px 0;
+}
+
+.bar3 {
+    margin: 0 0 9px 0;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2px, 2px);
+    transform: rotate(-45deg) translate(-2px, 2px);
+    margin: 0 0 1px 0;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    margin: 0 0 1px 0;
+}
+
+
+.product1 > ul >li {
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0.5%;
+}
+
+.product1 > ul >li > a {
+    text-decoration: none;
+    color: black;
+}
+
+div.product1  .image {
+    width: 100%;
+    height: 100%;
+}
+
+div.product1 .image:hover {
+   opacity: 0.9;
+}
+
+div.slidWrap {
+    height: 680px;
+    overflow: hidden;
+}
+
+div.slidWrap > .slideNav {
+    max-width: 1700px;
+    width: auto;
+    margin: 0 auto;
+    height: 680px;
+    padding-top: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideNav> ul,li {
+    list-style: none;
+}
+
+.slideNav > ul {
+    margin: 0%;
+    height: 100%;
+}
+
+.slideNav li {
+    height: 100%;
+}
+
+div.slidWrap .slideNav li:nth-child(1) {
+    background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/main1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.slidWrap >.slideNav li:nth-child(2) {
+    background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/main2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.slidWrap >.slideNav li:nth-child(3) {
+    background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/main4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.minSizeWrap {
+    height: auto;
+}
+
+div.info {
+    padding-bottom: 0.6%;
+    padding-top: 2%;
+    margin: 0.3;
+}
+
+div.info > .left-banner {
+    display: inline-block;
+    width: 48.5%;
+    margin: 0.7%;
+    text-align: left;
+}
+
+div.info > .left-banner img {
+    width: 100%;
+}
+
+div.info > .right-banner {
+    display: inline-block;
+    width: 48.5%;
+    margin: 0.7%;
+    height: auto;
+    text-align: left;
+}
+
+div.info > .right-banner img {
+    width: 100%;
+}
+
+
+.t-item {
+    font-size :40px;
+    text-align: center;
+    margin-top: 5%;
+    padding: 100px 0 50px 0;
+}
+
+.back {
+    margin-top: 15%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/back.png');  
+    min-height: 500px;
+    max-width: 1700px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgba(247, 240, 240, 0.8);
+    font-size: 38px;
+}
+
+.caption span.border {
+    padding: 18px;
+    letter-spacing: 10px;
+}
+
+.infomation {
+    max-width: 1700px;
+    display: flex;
+    height:  250px;
+}
+
+.text-info {
+    width: 35%;
+    padding: 70px 30px 40px 90px;
+    display: inline-block;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.bank-info {
+    width: 35%;
+    padding: 70px 0px 40px 120px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.return {
+    text-align: right;
+    width: 35%;
+    padding: 70px 110px 40px 0px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.footer {
+    height: 280px;
+    background-color: #fcf8ec;
+    font-size: 13px;
+}
+
+.footer > .ul1 li {
+    list-style: none;
+    display: inline-block;
+    word-wrap: break-word;
+    padding: 50px 0px 0 10px;
+}
+
+
+.footer > .ul1 {
+    padding: 50px 0px 15px 70px;
+}
+div.infomation >.footer > li,a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    text-align: right;
+}
+
+.footer > .footer-infos > .ul2 {
+    padding:0 0 10px 80px;
+    margin: 0;
+}
+
+.footer > .footer-infos > .ul3 {
+    padding-left: 80px;
+    margin:0;
+}
+
+.footer > .footer-infos > .ul2,li {
+    display: inline-block;
+    color: rgb(100, 100, 100);
+}
+
+
+span.imageWrap {
+    display: block;
+    position:relative;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .topNav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-center {
+        display: block;
+        text-align: center;
+        padding: 5px 0 5px 0;
+    }
+
+    .sns {
+        padding-left: 46%;   
+     }
+
+     .sns li {
+        padding: 0 5px 0 0;
+    }
+
+    .main {
+        overflow: hidden;
+        min-width: 500px;
+        width: 100%;
+    }
+
+    div.slidWrap {
+        height: 750px;
+    }
+
+   div.slidWrap > .slideNav {
+    max-width: 800px;
+    width: auto;
+    margin: 0 auto;
+    height: 0px;
+    height: 750px;
+    padding-top: 70px;
+    overflow: hidden;
+    position: relative;
+    }
+    .slideNav li {
+        height: 100%;
+    }
+
+    .slideNav li:nth-child(1) {
+        background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/main1_m.png') !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .slideNav li:nth-child(2) {
+        background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/main2m.png') !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .slideNav li:nth-child(3) {
+        background-image:url('/Users/johyesu/DEV/react_shop/src/components/views/images/main3m.png') !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .item-wrap {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 700px;
+        min-width: 500px;
+    }
+
+    .t-item {
+        font-size :25px;
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+    
+    .infomation {
+        max-width: 700px;
+        display: flex;
+        height:  250px;
+    }
+
+    .text-info {
+        width: 35%;
+        padding: 70px 30px 40px 70px;
+        display: inline-block;
+        font-size: 11px;
+        overflow: hidden;
+    }
+    
+    .bank-info {
+        width: 35%;
+        padding: 70px 0px 40px 60px;
+        display: inline-block;
+        overflow: hidden;
+        font-size: 11px;
+    }
+    
+    .return {
+        text-align: right;
+        width: 35%;
+        padding: 70px 50px 40px 0px;
+        display: inline-block;
+        overflow: hidden;
+        font-size: 11px;
+    }
+
+    .footer {
+        height: 240px;
+        background-color: #fcf8ec;
+        font-size: 11px;
+    }
+
+    div.info > ul > li {
+        list-style: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 0.5%;
+        width: 49%;
+        height: 200px;
+    }
+    
+    .info > ul {
+        margin: 0%;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .info > ul > li {
+        height: 100%;
+        width: 90%;
+    }
+    
+    .info li:nth-child(1) {
+        background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/banner1.png');
+        background-size: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    .info li:nth-child(2) {
+        background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/banner2.png');
+        background-size: 400px;
+        background-repeat: no-repeat;
+    }
+   
+}
+
+@media screen and (max-width : 450px) {
+    .topNav {
+        display: block;
+        text-align: center;
+        font-size:  16px;
+    }
+
+    .nav-center {
+        display: block;
+        text-align: center;
+        padding: 5px 0 5px 0;
+    }
+    .sns {
+       padding-left: 45%;   
+    }
+    .sns li {
+        padding: 0 5px 0 0;
+    }
+
+    .logo {
+        font-size: 16px ;
+    }
+
+    div.slidWrap {
+        overflow: visible;
+        height: 480px;
+    }
+
+    .main {
+        overflow: hidden;
+        min-width: 250px;
+        max-width: 450px;
+        width: 100%;
+    }
+
+   div.slidWrap > .slideNav {
+    max-width: 500px;
+    width: auto;
+    margin: 0 auto;
+    height: 480px;
+    padding-top: 80px;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .slideNav {
+        width: 1;
+        padding-top: 70px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .slideNav li {
+        height: 100%;
+    }
+
+    div.info > ul > li {
+        list-style: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 0.5%;
+        width: 49%;
+        height: 130px;
+    }
+
+    .info li:nth-child(1) {
+        background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/banner1.png');
+        background-size: 240px;
+        background-repeat: no-repeat;
+    }
+    
+    .info li:nth-child(2) {
+        background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/banner2.png');
+        background-size: 240px;
+        background-repeat: no-repeat;
+    }
+
+    .item-wrap {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 500px;
+        min-width: 400px;
+    }
+
+    .t-item {
+        font-size :25px;
+        text-align: center;
+        padding: 30px 
+    }
+
+    div.product1 .image {
+        height: 200px;
+    }
+
+
+    .back {
+        margin-top: 15%;
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1000px;
+        height: 100%;
+        background-image: url('/Users/johyesu/DEV/react_shop/src/components/views/images/back.png');
+        min-height: 300px;
+        max-width: 1700px;
+    }
+
+    .t-item {
+        font-size :25px;
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+    
+    .infomation {
+        max-width: 500px;
+        display: flex;
+        height:  220px;
+    }
+
+    .text-info {
+        width: 40%;
+        padding: 70px 15px 40px 30px;
+        display: inline-block;
+        font-size: 9px;
+        overflow: hidden;
+    }
+    
+    .bank-info {
+        width: 35%;
+        padding: 70px 10px 40px 20px;
+        display: inline-block;
+        overflow: hidden;
+        font-size: 9px;
+    }
+    
+    .return {
+        text-align: right;
+        width: 35%;
+        padding: 70px 30px 40px 0px;
+        display: inline-block;
+        overflow: hidden;
+        font-size: 9px;
+    }
+
+    .footer {
+        height: 240px;
+        background-color: #fcf8ec;
+        font-size: 8px;
+    }
+
+    .footer > .ul1 {
+        padding: 50px 0px 15px 30px;
+    }
+
+    .footer-infos > .ul2 {
+        padding:0 0 10px 40px;
+        margin: 0;
+    }
+    
+    .footer-infos > .ul3 {
+        padding-left: 40px;
+        margin:0;
+    }
+}
